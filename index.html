@@ -13,46 +13,50 @@
 
     <meta name="generator" content="Hexo 5.4.0">
     <style>
-        /* Style for dropdown menu */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* Dropdown Button Style */
+.dropbtn {
+    background-color: transparent; /* Matches the transparent background of other menu items */
+    color: rgba(255, 255, 255, 0.88); /* Same color as other links */
+    padding: 16px 20px; /* Adjust padding to match other items */
+    font-size: 1.2rem; /* Same font size as other links */
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif; /* Ensures font consistency */
+}
 
-        .dropbtn {
-            background-color: #33474d; /* Adjust to match your nav's color */
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #33474d; /* Background color for dropdown items */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+.dropdown-content a {
+    color: #f9fafa; /* Text color for dropdown items */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to match other navigation links */
+}
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
 
-        .dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f90; /* Hover background color to match other items */
+    color: white;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+/* Make the dropdown fit into the navigation bar properly */
+.header__nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
     </style>
     
 </head>
